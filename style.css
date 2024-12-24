@@ -6,7 +6,8 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto", serif;
+    font-size: 14px;
     color: #333;
     background: #f9f9f9;
   }
@@ -100,7 +101,7 @@
     margin-bottom: 1.5rem;
   }
   
-  .btn-resume {
+  button {
     background-color: #A238FF; /* Purple button */
     color: #F2E3FF;
     padding: 0.8rem 1.5rem;
@@ -109,9 +110,10 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: auto;
   }
   
-  .btn-resume:hover {
+  button:hover {
     background-color: #340d57; /* Slightly darker purple on hover */
   }
   
@@ -131,7 +133,7 @@
   /* Projects Section */
   .projects{
     padding: 2em;
-    height: 200vh;
+    height:auto;
   }
   .project-grid {
     display: grid;
@@ -141,60 +143,87 @@
   }
   
   .project-card {
-    border: 1px solid #ccc;
     padding: 1em;
-    text-align: center;
     height: 490px;
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
+align-items: start;
     gap: 10px;
   }
   
   .project-card img {
-    width: 300px;
+    width: 100%;
     height: 300px;
     border-radius: 8px;
+    object-fit: cover;
   }
 
   .projects p {
-    width: 70%;
-    height: 50px;
+    margin-bottom: 10px;
   }
   
   /* Contact Section */
   .contact{
+    width: 100%;
     background: #F2E3FF;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact h2{
+    align-items: center;
+  }
+
+  .contact button {
+    width: 20%;
+  }
+
+  .contactwrap{
+    background: white;
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0px;
   }
   .contact form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    width: 90%;
   }
   
-  .contact input, .contact textarea {
+   input, textarea {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
   }
   
-  .contact button {
-    padding: 0.5em;
-    background: #4e54c8;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
   
   
   /* Footer */
   .footer {
-    text-align: center;
-    padding: 1em;
-    background: #000;
-    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
+  .icons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons img {
+    width: 30px;
+    height: 30px;
+  }

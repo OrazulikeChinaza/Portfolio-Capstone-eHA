@@ -1,87 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chinaza's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header Section -->
-  <header class="navbar">
-    <div class="overlay">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinaza's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="navbar">
+      <div class="overlay">
         <h1>Building code, crafting solutions.</h1>
         <p>Innovative solutions through clean, impactful code.</p>
       </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Hero Section/About Me -->
-  <section id="hero" class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1>Hi, I am Chinazaekpele,<br> Frontend Developer</h1>
-        <p>
-          I love working with teams to bring <br> creative ideas to life and building web 
-          applications that solve real- <br> world problems. Let's create something amazing <br> together!
-        </p>
-        <button class="btn-resume">Download Resume</button>
+    <!-- Hero Section/About Me -->
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>
+            Hi, I am Chinazaekpele,<br />
+            Frontend Developer
+          </h1>
+          <p>
+            I love working with teams to bring <br />
+            creative ideas to life and building web applications that solve
+            real- <br />
+            world problems. Let's create something amazing <br />
+            together!
+          </p>
+          <button>Download Resume</button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/img/picture.png"
+            alt="Chinaza's Profile Picture"
+            class="profile-pic"
+          />
+        </div>
       </div>
-      <div class="hero-image">
-        <img src="/img/picture.png" alt="Chinaza's Profile Picture" class="profile-pic">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="img/jordan.png" alt="Project One Screenshot">
-        <h3>E-COMMERCE</h3>
-        <p>Creating eCommerce solutions that simplify shopping and solve real-world challenges.</p>
-        <button class="btn-resume">View Project</button>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="img/jordan.png" alt="Project One Screenshot" />
+          <h3>E-COMMERCE</h3>
+          <p>
+            Creating eCommerce solutions that simplify shopping and solve
+            real-world challenges.
+          </p>
+          <button>View</button>
+        </div>
+        <div class="project-card">
+          <img src="img/Screenshot (7).png" alt="Project Two Screenshot" />
+          <h3>COLLABORATION</h3>
+          <p>
+            I love working with teams to bring creative ideas to life and
+            building web applications that solve real-world problems.
+          </p>
+          <button>View</button>
+        </div>
+        <div class="project-card">
+          <img src="img/VOCA.png" alt="Project Two Screenshot" />
+          <h3>BLOG</h3>
+          <p>
+            Empowering developers and inspiring young minds, I connect people
+            with technology to create innovative solutions and opportunities for
+            growth.
+          </p>
+          <button>View</button>
+        </div>
+        <div class="project-card">
+            <img src="img/VOCA.png" alt="Project Two Screenshot" />
+            <h3>BLOG</h3>
+            <p>
+              Empowering developers and inspiring young minds, I connect people
+              with technology to create innovative solutions and opportunities for
+              growth.
+            </p>
+            <button>View</button>
+          </div>
       </div>
-      <div class="project-card">
-        <img src="img/Screenshot (7).png" alt="Project Two Screenshot">
-        <h3>COLLABORATION</h3>
-        <p>I love working with teams to bring creative ideas to life and building web applications that solve real-world problems.</p>
-        <button class="btn-resume">View Project</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contactwrap">
+        <img src="img/icons8-email-30.png" alt="">
+        <h2>Contact Me</h2>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-      <div class="project-card">
-        <img src="img/VOCA.png" alt="Project Two Screenshot">
-        <h3>BLOG</h3>
-        <p>Empowering developers and inspiring young minds, I connect people with technology to create innovative solutions and opportunities for growth.</p>
-        <button class="btn-resume">View Project</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div> 
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="icons">
+         <img src="img/icons8-facebook-logo.svg" alt="">
+         <img src="img/icons8-github.svg" alt="">
+         <img src="img/icons8-twitter (1).svg" alt="">
+         <img src="img/icons8-linkedin (1).svg" alt="">
+        </div>
+      <p>Copyright © 2020 All rights reserved</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2024 Chinaza's Portfolio</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
