@@ -238,14 +238,22 @@ align-items: start;
     }
     .hero-text h1 {
       font-size: 1.5rem;
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+      text-align: center;
     }
     .hero-text p {
       font-size: 1rem;
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+      text-align: center;
     }
     .project-grid {
         grid-template-columns: 1fr;
       }
       .hero-image {
     text-align: center; 
+    max-width: 100%; 
+    height: auto;
       }
   }
