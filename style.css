@@ -72,10 +72,16 @@
   /* Hero Section/About Me */
   .hero {
     background-color: #F2E3FF; 
-    padding: 2rem;
+    /* padding: 2rem; */
     border: 1px solid #ccc; 
     border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+  flex-direction: column; /* Stack text and image */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem; 
    
   }
   
@@ -238,14 +244,10 @@ align-items: start;
     }
     .hero-text h1 {
       font-size: 1.5rem;
-      word-wrap: break-word; 
-      overflow-wrap: break-word;
       text-align: center;
     }
     .hero-text p {
       font-size: 1rem;
-      word-wrap: break-word; 
-      overflow-wrap: break-word;
       text-align: center;
     }
     .project-grid {
