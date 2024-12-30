@@ -31,12 +31,11 @@
   }
 
   .overlay {
-    /* Ensure the text block is centered */
     width: 100%;
     display: flex;
-    flex-direction: column; /*Stack heading and paragraph */
-    align-items: center;    /* Horizontally center text */
-    justify-content: center; /* Vertically center text */
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
   }
 
   .overlay h1 {
@@ -73,8 +72,7 @@
   .hero {
     background-color: #F2E3FF; 
     /* padding: 2rem; */
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
+    border: 1px solid #ccc;  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
   flex-direction: column; /* Stack text and image */
