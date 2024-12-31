@@ -118,7 +118,6 @@
     transition: background-color 0.3s ease;
     width: auto;
   }
-  
   button:hover {
     background-color: #340d57; 
   }
@@ -255,5 +254,8 @@ align-items: start;
     text-align: center; 
     max-width: 100%; 
     height: auto;
+      }
+      .contactwrap button{
+        width: 20%;
       }
   }
