@@ -252,10 +252,13 @@ textarea {
   }
   .hero-text {
     width: 100%;
+    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
   }
   .hero-image {
     width: 100px; 
