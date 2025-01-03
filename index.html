@@ -11,6 +11,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "iK3VC2XmyM5DeHcv2",
+      });
+   })();
+</script>
   </head>
   <body>
     <!-- Header Section -->
@@ -117,7 +127,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" onclick="sendMail()">Submit</button>
         </form>
       </div>
     </section>

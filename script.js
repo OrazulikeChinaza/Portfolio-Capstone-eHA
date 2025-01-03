@@ -1,7 +1,6 @@
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
     this.reset();
-    alert("Thank you for reaching out ! I'll get back to you soon.");
   });
    
   function downloadResume() {
@@ -9,4 +8,13 @@ document.querySelector("form").addEventListener("submit", function (e) {
     link.href = "img/chinaza's resume.pdf";
     link.download = "Chinaza-Resume.pdf";
     link.click();
+  }
+
+  function sendMail(){
+    let parms = {
+      name : document.getElementById("name").value,
+      email : document.getElementById("email").value,
+      message : document.getElementById("message").value,
+    }
+    emailjs.send("service_dhfvl6p","template_7mj7aea",parms).then(alert("Email sent"))
   }
